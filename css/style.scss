@@ -242,6 +242,9 @@ color: #5f5f5f;
     justify-content: center;
     align-items: center;
     width: 50vw;
+    @media screen and (max-width : 700px) {
+        width: 100vw;
+    }
     
 }
 
@@ -324,11 +327,18 @@ color: #5f5f5f;
     @media screen and (max-width : 800px) {
         top: 50%;
     }
+    @media screen and (max-width : 720px) {
+        position: static;
+    }
 } 
 
 .social__links{
     text-orientation: mixed;
     writing-mode:vertical-lr;
+    @media screen and (max-width : 720px) {
+        text-orientation: unset;
+        writing-mode: unset;
+    }
 
 }
 
